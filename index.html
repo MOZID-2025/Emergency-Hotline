@@ -20,35 +20,63 @@
 
   <body class="hind-madurai-font">
     <!-- header section -->
-    <header class="flex justify-between container mx-auto mt-[30px] mb-[24px]">
+    <header
+      class="flex flex-col sm:flex-row justify-between items-center container mx-auto mt-[20px] mb-[20px] px-4"
+    >
       <!-- header left -->
-      <div class="header-left">
+      <div class="header-left mb-4 sm:mb-0">
         <div class="logo-section flex justify-center items-center">
           <img src="assets/logo.png" alt="" class="w-[50px] h-[50px]" />
-          <h2 class="text-[#006747] text-[18px] font-extrabold ml-4">
-            Emergency <br />
+          <h2
+            class="text-[#006747] text-[16px] sm:text-[18px] font-extrabold ml-4 text-center sm:text-left"
+          >
+            Emergency <br class="hidden sm:block" />
             Service
           </h2>
         </div>
       </div>
 
       <!-- header right -->
-      <div class="header-right flex justify-center items-center gap-x-6">
+      <div
+        class="header-right flex flex-col sm:flex-row justify-center items-center gap-y-3 sm:gap-y-0 sm:gap-x-6"
+      >
+        <!-- heart -->
         <div
-          class="heart flex justify-center items-center bg-[#a5f3b6] py-[11px] px-[35px] rounded-4xl"
+          class="heart flex justify-center items-center bg-[#a5f3b6] py-[8px] px-[20px] sm:py-[11px] sm:px-[35px] rounded-4xl w-full sm:w-auto"
         >
-          <p id="heart-count" class="font-extrabold mr-3 text-[18px]">0</p>
-          <img class="w-[30px] h-[30px]" src="assets/heart.png" alt="" />
+          <p
+            id="heart-count"
+            class="font-extrabold mr-3 text-[16px] sm:text-[18px]"
+          >
+            0
+          </p>
+          <img
+            class="w-[24px] h-[24px] sm:w-[30px] sm:h-[30px]"
+            src="assets/heart.png"
+            alt=""
+          />
         </div>
+
+        <!-- coin -->
         <div
-          class="coin flex justify-center items-center bg-[#a5f3b6] py-[11px] px-[35px] rounded-4xl"
+          class="coin flex justify-center items-center bg-[#a5f3b6] py-[8px] px-[20px] sm:py-[11px] sm:px-[35px] rounded-4xl w-full sm:w-auto"
         >
-          <p id="coin" class="mr-3 font-extrabold">100</p>
-          <img class="w-[24px] h-[24px]" src="assets/coin.png" alt="" />
+          <p id="coin" class="mr-3 font-extrabold text-[16px] sm:text-[18px]">
+            100
+          </p>
+          <img
+            class="w-[20px] h-[20px] sm:w-[24px] sm:h-[24px]"
+            src="assets/coin.png"
+            alt=""
+          />
         </div>
-        <div class="copy bg-[#00A63E] py-[11px] px-[35px] rounded-4xl">
-          <p class="text-white font-extrabold">
-            <span id="copy">0 </span> Copy
+
+        <!-- copy -->
+        <div
+          class="copy bg-[#00A63E] py-[8px] px-[20px] sm:py-[11px] sm:px-[35px] rounded-4xl w-full sm:w-auto text-center"
+        >
+          <p class="text-white font-extrabold text-[16px] sm:text-[18px]">
+            <span id="copy">0</span> Copy
           </p>
         </div>
       </div>
