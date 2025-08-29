@@ -1,10 +1,10 @@
-var heartCount = document.getElementById("heart-count");
+let heartCount = document.getElementById("heart-count");
 
-var cardHearts = document.querySelectorAll("#heart i");
+let cardHearts = document.querySelectorAll("#heart i");
 
-var count = 0;
+let count = 0;
 
-for (var i = 0; i < cardHearts.length; i++) {
+for (let i = 0; i < cardHearts.length; i++) {
   cardHearts[i].addEventListener("click", function () {
     count++;
     heartCount.textContent = count;
